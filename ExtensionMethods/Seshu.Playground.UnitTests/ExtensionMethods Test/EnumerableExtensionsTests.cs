@@ -21,6 +21,7 @@ namespace Seshu.Playground.UnitTests.ExtensionMethods_Test
                 "Papolu"
             };
 
+
             var result= EnumerableExtensions.Join(listOfStrings,',');
             Assert.AreEqual("Seshu,Papolu", result);
 

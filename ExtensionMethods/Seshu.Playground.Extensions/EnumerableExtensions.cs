@@ -10,6 +10,7 @@ namespace Seshu.Playground.Extensions
     /// </summary>
     public static class EnumerableExtensions
     {
+
         /// <summary>
         /// Gets the string by joining the string
         /// </summary>
