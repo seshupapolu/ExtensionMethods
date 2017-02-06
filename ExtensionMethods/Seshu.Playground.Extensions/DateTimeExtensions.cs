@@ -16,6 +16,17 @@ namespace Seshu.Playground.Extensions
         {
             return new DateTime(dateTime.Year, dateTime.Month, DateTime.DaysInMonth(dateTime.Year, dateTime.Month));
         }
+
+
+        /// <summary>
+        /// Gets the first date of the Month
+        /// </summary>
+        /// <param name="dateTime">dateTime</param>
+        /// <returns>DateTime</returns>
+        public static DateTime ToStartDateOfMonth(this DateTime dateTime)
+        {
+            return new DateTime(dateTime.Year, dateTime.Month, 01);
+        }
     }
 
 }
