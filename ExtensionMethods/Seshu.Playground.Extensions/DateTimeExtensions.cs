@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Seshu.Playground.Extensions
 {
@@ -19,6 +15,17 @@ namespace Seshu.Playground.Extensions
         public static DateTime ToLastDateOfMonth(this DateTime dateTime)
         {
             return new DateTime(dateTime.Year, dateTime.Month, DateTime.DaysInMonth(dateTime.Year, dateTime.Month));
+        }
+
+
+        /// <summary>
+        /// Gets the first date of the Month
+        /// </summary>
+        /// <param name="dateTime">dateTime</param>
+        /// <returns>DateTime</returns>
+        public static DateTime ToStartDateOfMonth(this DateTime dateTime)
+        {
+            return new DateTime(dateTime.Year, dateTime.Month, 01);
         }
     }
 
