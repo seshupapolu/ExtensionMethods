@@ -29,6 +29,27 @@ namespace Seshu.Playground.Extensions
             }
             return builder.ToString().Substring(0, builder.Length - 1);
         }
+        
+          /// <summary>
+
+        /// ForEach executes an action on the items
+
+        /// </summary>
+
+        /// <typeparam name="T">T</typeparam>
+
+        /// <param name="enumeration">items</param>
+
+        /// <param name="action">action</param>
+
+        public static void ForEach<T>(this IEnumerable<T> enumeration, Action<T> action)
+        {
+            if (enumeration != null && action != null)
+                foreach (T item in enumeration)
+                {
+                    action(item);
+                }
+        }
     }
 
 }
